@@ -8,8 +8,7 @@
 import { spawnSync } from 'child_process';
 import { constants, statSync } from 'fs';
 import path = require('path');
-import { additionalDeps } from './additional-deps';
-import { bundledDeps } from './dep-lists';
+import { additionalDeps, bundledDeps } from './dep-lists';
 
 export function getDependencies(buildDir: string, applicationName: string): string[] {
 	// Get the files for which we want to find dependencies.
